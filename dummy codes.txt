@@ -1,0 +1,188 @@
+// APP.js
+// import React from 'react';
+// import { useState, useEffect } from 'react';
+
+
+// import "./App.css"
+
+// import ProductCard from './product';
+
+// import SearchIcon from './search.svg'
+
+// const API_URL = 'https://fakestoreapi.com/products'
+
+// const MyApp=()=>{
+
+//     const [products,setProduct]=useState([]);
+//     const[searchTerm,setSearchTerm]=useState('');
+
+//     const searchProduct=async(category)=>{
+
+//         //calling api
+//         const response=await fetch(`${API_URL}/category/${category.toString()}`);
+//         const data=await response.json();
+//         console.log('===============?',data)
+
+//         setProduct(data);
+    
+//     }
+//     useEffect(()=>{
+//        searchProduct("electronics");
+//     },[]);
+
+
+
+//     return(
+//         <div className="app">
+//             <h1>Product Catalog</h1>
+//             <div className="search">
+//             <input
+//                     placeholder='Search For Products'
+//                     onChange={(event) => searchProduct(event.target.value)}
+//                 />
+//                 <img
+//                     src={SearchIcon}
+//                     alt='search'
+//                     onClick={() => searchProduct(searchTerm)}
+//                 />
+
+//             </div>
+//             {
+//                 products?.length > 0
+//                     ? (
+
+//                         <div className='container'>
+//                             {products.map((products,index)=>(
+//                                 <ProductCard products={products} key={index}/>
+//                             ))}
+//                         </div>
+//                     ) : (
+//                         <div className='empty'> 
+//                             <h2>No products found!</h2>
+//                         </div>
+//                     )
+//             }
+//         </div>
+//     );
+// }
+// export default MyApp;
+
+
+.....................................................
+
+// Product.jsx
+
+// import React from "react";
+
+// // {
+// //     "id": 1,
+// //     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+// //     "price": 109.95,
+// //     "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+// //     "category": "men's clothing",
+// //     "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+// //     "rating": {
+// //         "rate": 3.9,
+// //         "count": 120
+// //     }
+// // }
+
+// const ProductCard=({products})=>{
+//     return(
+//         <div className="product">
+//             <div>
+//                 <title>{products.title}</title>
+//             </div>
+//             <div>
+//             <img src={products.image} alt={products.title}/>
+//             </div>
+//             <div>
+//                 <h3>{products.category}</h3>
+//             </div>
+//         </div>
+        
+//     );
+// }
+// export default ProductCard;
+
+.......................................................................
+
+// index js
+
+// import React from "react";
+// import ReactDOM from "react-dom";
+
+// import App from './App';
+
+// ReactDOM.render(<App/>, document.getElementById("root"));
+
+
+...................................
+
+{/* // const API_LINK = 'https://fakestoreapi.com/products';
+
+// const MyApp = () => {
+//     const [products, setProducts] = useState([]); */}
+{/* 
+//     const showProducts = async () => {
+//         const response = await fetch(`${API_LINK}`); */}
+//         const data = await response.json();
+//         console.log('===============?', data);
+//         setProducts(data);
+//     }
+
+//     useEffect(() => {
+//         showProducts();
+//     }, []);
+
+//     return (
+//         <div className="container">
+//             {
+//                 products.map((product, index) => 
+//                        <div className='product' key={index}>
+// //                     <img src={product.image} />
+                  
+// //                 </div>)
+// //             }
+
+
+//         </div>
+
+
+//     );
+// }
+// export default MyApp;
+
+
+...............................
+
+
+const API_LINK='https://jsonplaceholder.typicode.com/users';
+
+// const App = () => {
+//   const[albums,setAlbum]=useState([]);
+
+//   const ShowAllPhotos=async()=>{
+//     const response=await fetch(`${API_LINK}`);
+//     const data=await response.json();
+//     console.log('Showing all data in console:',data);
+//     setAlbum(data);
+//   }
+//   useEffect(()=>{
+//     ShowAllPhotos();
+//   },[]);
+ 
+//   return (
+//     <div className='album'>
+//       {
+//          albums.map((albumData,index)=>
+//          <AlbumCard albumData={albumData} key={index}/>)
+//       }
+//     </div>
+    
+    
+//   );
+// }
+
+// export default App;
+

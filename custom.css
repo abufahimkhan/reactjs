@@ -1,0 +1,23 @@
+
+.float-container {
+  display: list-item;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.float-child {
+  text-align: center;
+  padding: 1px;
+  border: 2px solid rgb(27, 27, 27);
+}  
+::-webkit-input-placeholder { /* Edge */
+  color: red;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: red;
+}
+
+::placeholder {
+  color: red;
+}
